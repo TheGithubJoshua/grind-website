@@ -1,0 +1,99 @@
+<!doctype html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Iso">
+<html>
+    <head>
+        <style>
+
+            .titlelikestuff {
+                font-family: "Black 900", "Roboto", sans-serif;
+                color:darkred;
+                text-shadow: 2px 2px red;
+                text-align: center
+                
+            }
+
+            .teasers {
+                font-family: 'Regular 400', 'Golos Text', sans-serif;
+                padding-left: 6.875em;
+                color:darkred;
+            }
+            .name {
+                font-size: 7.5em;
+                text-align: center;
+                font-family: 'Rubik Iso', cursive;
+                color:darkred;
+                text-shadow: 2px 2px red;
+            }   
+            
+            .explanation {
+                font-size: 1.25em;
+                padding-left: 13em;
+                font-family: 'Regular 400', 'Golos Text', sans-serif;
+                /*border-style: solid;*/
+                /*border-width: 0px 17em 0px 7em;*/
+                color:darkred;
+            }
+            .contactus {
+                font-size: 1.1em;
+                font-family: 'Regular 400', 'Golos Text', sans-serif;
+                color:darkred;
+            }
+            body {
+    background-color: black;
+  }
+        </style>
+        
+        <title >Grind | Best Energy Drink</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <div style="text-align:center">
+            <h1 class="titlelikestuff">The Ultimate Drink</h1>
+        </div>
+        <div>
+            <p class="teasers">Welcome to your new favourite drink. <br> <strong>We know you'll like this one.</strong>
+            </p>
+            <h2 class="name">Grind</h2>
+        </div>
+        <div>
+            <p class="explanation">Our world-class scientists have found a way to include <br>health and tastiness in one sip. And has been design- <br>ed especially for workouts.<a href="#Contactus">*</a></p>
+        </div>
+
+
+        <!--Bottom of page-->
+        <div class="contactus">
+            <a id="Contactus"><a href="mailto:kevin@sysrex.com"> Contact us</a></a>
+            
+
+                <button onclick="action()">Review</button>
+                <div>
+
+                </div>
+
+                <div>
+
+                </div>
+
+                <p id="p1"></p>
+                
+                <script>
+                    
+                function action() {
+                    var rate
+                    rate=prompt("What is Your Review?")
+                    document.getElementById("p1").innerHTML = rate;
+
+
+                }
+
+                
+
+
+
+                </script>
+                
+
+            </form>
+        </div>
+    </body>
+</html>
