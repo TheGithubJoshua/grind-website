@@ -1,49 +1,36 @@
 <!doctype html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Iso">
 <html>
     <head>
         <style>
-
             .titlelikestuff {
                 font-family: "Black 900", "Roboto", sans-serif;
-                color:darkred;
-                text-shadow: 2px 2px red;
                 text-align: center
-                
             }
-
             .teasers {
                 font-family: 'Regular 400', 'Golos Text', sans-serif;
                 padding-left: 6.875em;
-                color:darkred;
             }
             .name {
-                font-size: 7.5em;
+                font-size: 6.5em;
                 text-align: center;
-                font-family: 'Rubik Iso', cursive;
-                color:darkred;
-                text-shadow: 2px 2px red;
-            }   
-            
+                font-family: 'Regular 400', 'Golos Text', sans-serif;
+            }
             .explanation {
                 font-size: 1.25em;
                 padding-left: 13em;
                 font-family: 'Regular 400', 'Golos Text', sans-serif;
                 /*border-style: solid;*/
                 /*border-width: 0px 17em 0px 7em;*/
-                color:darkred;
             }
             .contactus {
                 font-size: 1.1em;
                 font-family: 'Regular 400', 'Golos Text', sans-serif;
-                color:darkred;
             }
             body {
-    background-color: black;
-  }
+                background-color: rgb(67, 73, 131);
+            }
         </style>
-        
-        <title >Grind | Best Energy Drink</title>
+        <title>Grind | Best Energy Drink</title>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
@@ -62,37 +49,10 @@
 
         <!--Bottom of page-->
         <div class="contactus">
-            <a id="Contactus"><a href="mailto:kevin@sysrex.com"> Contact us</a></a>
-            
-
-                <button onclick="action()">Review</button>
-                <div>
-
-                </div>
-
-                <div>
-
-                </div>
-
-                <p id="p1"></p>
-                
-                <script>
-                    
-                function action() {
-                    var rate
-                    rate=prompt("What is Your Review?")
-                    document.getElementById("p1").innerHTML = rate;
-
-
-                }
-
-                
-
-
-
-                </script>
-                
-
+            <form action="./formdata.html" method="get">
+                <label for="rate">Review us:</label>
+                <input type="text" id="rate" name="rate">
+                <input type="submit" value="Submit">
             </form>
         </div>
     </body>
